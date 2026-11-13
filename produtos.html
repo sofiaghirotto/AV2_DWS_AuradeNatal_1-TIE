@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/responsivo.css">
+      <title>Aura de Natal- Produtos</title>
+</head>
+<body>
+    
+    <div id="neve-container"></div>
+
+    <header class="header-principal">
+        <button class="menu-toggle" id="menu-toggle" type="button">☰</button>
+        <div class="logo">Aura de Natal 🎄 </div>
+        <nav id="navbar" class="navbar">
+            <a href="index.html">Home</a>
+            <a href="produtos.html" class="active">Produtos</a>
+            <a href="sobre.html"> Sobre Nós</a>
+            <a href="galeria.html">Ofertas</a>
+            <a href="contato.html">Contato</a>
+            
+        </nav>
+        <div class="header-acoes">
+    <button id="btn-musica" class="btn-icone">🎵 MÚSICA</button>
+    <div class="carrinho-icone">🛒 <span id="contador-carrinho">0</span></div>
+</div>
+    </header>
+
+    <main class="container-produtos-pagina">
+        <h1>Nosso Catálogo Completo</h1>
+
+        <div class="barra-filtros">
+            <input type="text" id="campo-busca" placeholder="Buscar produto por nome...">
+            <select id="filtro-categoria">
+                <option value="todos">Todas as Categorias</option>
+                 <option value="panetones">Panetones</option>
+                <option value="biscoitos">Biscoitos</option>
+                <option value="bolos">Bolos</option>
+                <option value="doces">Doces Finos</option>
+                 <option value="presentes">Kits e Presentes</option>
+
+            </select>
+        </div>
+
+        <p id="contador-produtos" class="contador-texto">Mostrando 0 de 50 produtos</p>
+        <div id="mensagem-vazia" class="mensagem-vazia hidden">Nenhum produto encontrado para a sua busca.</div>
+        
+        <div id="modal-produtos" class="grid-produtos"></div>
+        
+        </main>
+
+
+    <div id="modal-produto" class="modal hidden">
+        <div class="modal-conteudo">
+            <button class="fechar-modal" type="button" aria-label="Fechar ">&times;
+          </button>
+                <div id="detalhes-modal"></div>
+        </div>
+    </div>
+    <div id="paginacao-container" class="paginacao"></div>
+
+    <footer class="footer-principal">
+        <p>&copy;2026 Confeitaria Aura de Natal- Colégio UNASP.</p>
+    </footer>
+ <audio id="musica-natal" loop>
+    <source src="audio/mixkit-tinsel-and-mistletoe-93.mp3" type="audio/wav">
+   </audio>
+    <script src="js/produtos.js" defer></script>
+       <script src="js/script.js" defer></script>
+
+</body>
+</html>

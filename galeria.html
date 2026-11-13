@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/responsivo.css">
+      <title>Aura de Natal- Galeria& Ofertas</title>
+
+<body>
+
+    <div id="neve-container"></div>
+     <header class="header-principal">
+        <button class="menu-toggle" id="menu-toggle" type="button">☰</button>
+        <div class="logo">Aura de Natal 🎄 </div>
+        <nav id="navbar" class="navbar">
+            <a href="index.html">Home</a>
+            <a href="produtos.html" >Produtos</a>
+            <a href="sobre.html"> Sobre Nós</a>
+            <a href="galeria.html" class="active">Ofertas</a>
+            <a href="contato.html">Contato</a>
+            
+        </nav>
+      <div class="header-acoes">
+    <button id="btn-musica" class="btn-icone">🎵 MÚSICA</button>
+    <div class="carrinho-icone">🛒 <span id="contador-carrinho">0</span></div>
+</div>
+    </header>
+    <main class="container-galeria">
+        <h2>Ofertas Especiais de Natal 🎄</h2>
+        <p>Clique na foto para ampliar ou aproveite os descontos por tempo limitado!</p>
+
+     
+ <audio id="musica-natal" loop>
+    <source src="audio/mixkit-tinsel-and-mistletoe-93.mp3" type="audio/wav">
+   </audio>
+     <main class="container-galeria">
+    <h2>Ofertas Especiais de Natal 🎄</h2>
+    <p>Clique em qualquer imagem para ampliar os nossos doces em oferta!</p>
+    <div class="grid-galeria">
+            <!-- OFERTA 1 -->
+            <div class="card-oferta">
+                <span class="badge-desconto">20% OFF</span>
+                <img class="img-lightbox" src="img/romario-roges-UxN1_nU09J4-unsplash.jpg.jpeg" alt="Chocotone Trufado">
+                <h3>Chocotone Trufado Belga</h3>
+                <p class="desc-oferta">Massa macia recheada com ganache de chocolate belga 54%.</p>
+                <p class="preco-antigo">De R$ 59,90</p>
+                <p class="preco">Por R$ 47,90</p>
+                <button class="btn-link" type="button" onclick="adicionarAoCarrinho()">Comprar Oferta</button>
+            </div>
+
+            <!-- OFERTA 2 -->
+            <div class="card-oferta">
+                <span class="badge-desconto">15% OFF</span>
+                <img class="img-lightbox" src="img/casey-chae-3DrCZblTGoQ-unsplash (1).jpg" alt="Biscoitos Gingerbread">
+                <h3>Kit Biscoitos Gingerbread</h3>
+                <p class="desc-oferta">Biscoitos natalinos de gengibre e especiarias decorados à mão.</p>
+                <p class="preco-antigo">De R$ 29,90</p>
+                <p class="preco">Por R$ 24,90</p>
+                <button class="btn-link" type="button" onclick="adicionarAoCarrinho()">Comprar Oferta</button>
+            </div>
+
+            <!-- OFERTA 3 -->
+            <div class="card-oferta">
+                <span class="badge-desconto">25% OFF</span>
+                <img class="img-lightbox" src="img/tuyen-vo-yfMzLGLw_NM-unsplash.jpg.jpeg" alt="Cesta Doces de Natal">
+                <h3>Cesta Doces Vermelhos</h3>
+                <p class="desc-oferta">Seleção especial de trufas, bombons e biscoitos para presente.</p>
+                <p class="preco-antigo">De R$ 119,90</p>
+                <p class="preco">Por R$ 89,90</p>
+                <button class="btn-link" type="button" onclick="adicionarAoCarrinho()">Comprar Oferta</button>
+            </div>
+
+            <!-- OFERTA 4 -->
+            <div class="card-oferta">
+                <span class="badge-desconto">30% OFF</span>
+                <img class="img-lightbox" src="img/clay-banks-LOFMemtNVNg-unsplash.jpg" alt="Combo Mesa de Ceia">
+                <h3>Combo Mesa de Ceia</h3>
+                <p class="desc-oferta">1 Panetone tradicional + 1 bolo festivo + caixa de docinhos.</p>
+                <p class="preco-antigo">De R$ 199,90</p>
+                <p class="preco">Por R$ 139,90</p>
+                <button class="btn-link" type="button" onclick="adicionarAoCarrinho()">Comprar Oferta</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- MODAL POPUP (COMEÇA FECHADO COM A CLASSE HIDDEN) -->
+    <div id="modal-galeria" class="modal hidden">
+        <span id="btn-fechar-modal" class="fechar-modal">&times;</span>
+        <img id="img-ampliada" class="modal-conteudo-img" src="" alt="Imagem Ampliada">
+    </div>
+    <!-- IMAGENS DAS OFERTAS (LINKS ULTRA REQUISITADOS E LEVES) -->
+  
+    <!-- MODAL POPUP -->
+   
+       
+
+        <footer class="footer-principal">
+        <p>&copy;2026 Cofeitaria Aura de Natal- Colégio UNASP.</p>
+    </footer>
+
+     <script src="js/produtos.js" defer></script>
+         <script src="js/script.js" defer></script>
+
+</body>
+</html>

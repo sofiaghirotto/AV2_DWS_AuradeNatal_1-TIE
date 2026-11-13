@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/responsivo.css">
+      <title>Aura de Natal- Sobre Nós</title>
+</head>
+<body>
+    
+    <div id="neve-container"></div>
+
+    <header class="header-principal">
+        <button class="menu-toggle" id="menu-toggle" type="button">☰</button>
+        <div class="logo">Aura de Natal 🎄 </div>
+        <nav id="navbar" class="navbar">
+              <a href="index.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="sobre.html" class="active"> Sobre Nós</a>
+            <a href="galeria.html">Ofertas</a>
+            <a href="contato.html">Contato</a>
+        
+           
+        </nav>
+
+        <div class="header-acoes">
+    <button id="btn-musica" class="btn-icone">🎵 MÚSICA</button>
+    <div class="carrinho-icone">🛒 <span id="contador-carrinho">0</span></div>
+</div>
+    </header>
+
+    <main class="container-sobre">
+        <section class="historia scroll-animar">
+            <h1>Nossa História</h1>
+            <p>A Aura de Natal nasceu da paixão por transformar receitas tradicionais em momentos inesquecíveis de celebração.Fundada com o objetivo de levar o calor do espírito natalino para a mesa de cada família, nossa confeitaria prepara tudo artesanalmente com ingredientes selecionados. </p>
+
+        </section>
+
+        <section class="box-countdown scroll-animar">
+            <h2>Contagem Regressiva para o Natal 🎅 </h2>
+             <div id="countdown-natal" class="timer-display">Faltam X dias!</div>
+        </section>
+
+        <section class=" mvv grid-tres-colunas scroll-animar">
+        <div class="card-mvv">
+            <h3>Missão</h3>
+            <p>Proporcionar alegria através de sabores artesanais de alta qualidade.</p>
+
+        </div>
+        <div class="card-mvv">
+            <h3>Visão</h3>
+            <p>Ser a confeitaria de referência em doces finos natalinos na região.</p>
+
+        </div>
+        <div class="card-mvv">
+            <h3>Valores</h3>
+
+            <p>Tradição, Carinho, Higiene e amor pela confeitaria.
+    </p>  </div>
+
+        </section>
+
+        <section class="equipe scroll-animar">
+            <h2>Nossa Equipe</h2>
+            <div class="grid-equipe">
+                <div class="card-membro">
+                    <div class="avatar">👩‍🍳</div>
+                    <h3>Sofia</h3>
+                    <p>Chefe Confeiteira</p>
+                </div>
+                <div class="card-membro">
+                    <div class="avatar">👩‍🍳</div>
+                    <h3>João</h3>
+                    <p>Mestre Padeiro </p>
+                
+                </div>
+                <div class=" card-membro">
+                    <div class="avatar"> 👩‍🍳</div>
+                    <h3>Maria</h3>
+                    <p>Gestão & Design</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+   <footer class="footer-principal">
+        <p>&copy;2026 Confeitaria Aura de Natal- Colégio UNASP.</p>
+    </footer>
+     <audio id="musica-natal" loop>
+    <source src="audio/mixkit-tinsel-and-mistletoe-93.mp3" type="audio/wav">
+   </audio>
+ <script src="js/produtos.js" defer></script>
+       <script src="js/script.js" defer></script>
+
+        
+</body>
+</html>

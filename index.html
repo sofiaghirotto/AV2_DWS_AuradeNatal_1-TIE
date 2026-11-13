@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/responsivo.css">
+    <title>NATAL</title>
+
+</head>
+<body>
+
+    <div id="neve-container"></div>
+    
+    <header class="header-principal">
+        <button class="menu-toggle" id="menu-toggle" type="button">☰</button>
+        
+        <div class="logo">Aura de Natal</div>
+        <button class="menu-toggle" id="meno-toggle" type="button" aria-label="Slide anterior"></button>
+       <nav id="navbar" class="navbar">
+            <a href="index.html"class="active">Home</a>
+            <a href="produtos.html" >Produtos</a>
+            <a href="sobre.html"> Sobre Nós</a>
+            <a href="galeria.html">Ofertas</a>
+            <a href="contato.html">Contato</a>
+            
+        </nav>
+        <div class="header-acoes">
+    <button id="btn-musica" class="btn-icone">🎵 MÚSICA</button>
+    <div class="carrinho-icone">🛒 <span id="contador-carrinho">0</span></div>
+</div>
+    </header>
+   <audio id="musica-natal" loop>
+    <source src="audio/mixkit-tinsel-and-mistletoe-93.mp3" type="audio/wav">
+   </audio>
+      <section class="banner-parallax">
+        <div class="parallax-overlay">
+         <h1 id="titulo-parallax">Aura de Natal</h1>
+         <p>A magia dos doces artesanais na sua ceia </p>
+        <div class="box-countdown">
+    <h3>Contagem Regressiva para o Natal 🎄</h3>
+    <div id="timer-natal" class="timer-display">00d 00h 00m 00s</div>
+</div>
+        </div>
+      </section> 
+
+      <section class="secao-carrossel">
+        <h2>Destaques & Promoções</h2>
+        <div class="carrossel-container">
+      <div class="slide slide-active">
+    <img src="img/kristo-markou-qKi-Z5qpEHc-unsplash.jpg" alt="Panetone">
+    <div class="legenda-slide">15% OFF em Panetones Trufados</div>
+</div>
+<div class="slide">
+    <img src="img/isabela-kronemberger-bbkqplzRVJw-unsplash (1).jpg" alt="Biscoitos">
+    <div class="legenda-slide">Kits Especiais de Biscoitos Decorados</div>
+</div>
+            <button class="prev" type="button" aria-label="Slide anterior"></button>
+            <button class="next" type="button" aria-label="Próximo slide"></button>
+            <div class="slide-indicadores"></div>    
+        </div>
+      </section>
+
+       <section class=" secao-destaques">
+        <h2>Produtos em Destaque</h2>
+        <div id="container-destaques" class="grid-produtos"></div>
+       </section>
+       <section class=" chamadas-paginas">
+        <div class="card-chamada scroll-animar">
+            <h3>Conheça Nosso Catálogo</h3>
+            <p>Descubra como nasceu a confeitaria Aura de Natal.</p>
+            <a href="sobre.html" class="btn-link">Sobre Nós</a>
+        </div>
+        <div class="card-chamada scroll-animar">
+            <h3>Ofertas Excluisivas</h3>
+            <p>Aproveite os descontos por tempo limitado.</p>
+            <a href="galeria.html" class="btn-link">Ver Ofertas</a>
+        </div>
+       </section>
+
+       <footer class="footer-principal">
+        <p>&copy;2026 Confeitaria Aura de Natal - Colégio UNASP.  </p>
+       </footer>
+
+         <script src="js/produtos.js" defer></script>
+         <script src="js/script.js" defer></script>
+</body>
+</html>

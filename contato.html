@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/responsivo.css">
+      <title>Aura de Natal-contato</title>
+
+</head>
+<body>
+    
+    <div id="neve-container"></div>
+  <header class="header-principal">
+    <button class="menu-toggle" id="menu-toggle" type="button">☰</button>
+        <div class="logo">Aura de Natal 🎄 </div>
+        <nav id="navbar"class="navbar">
+            <a href="index.html">Home</a>
+            <a href="produtos.html" >Produtos</a>
+            <a href="sobre.html"> Sobre Nós</a>
+            <a href="galeria.html">Ofertas</a>
+            <a href="contato.html" class="active">Contato</a>
+            
+        </nav>
+        
+        <div class="header-acoes">
+    <button id="btn-musica" class="btn-icone">🎵 MÚSICA</button>
+    <div class="carrinho-icone">🛒 <span id="contador-carrinho">0</span></div>
+</div>
+    </header>
+     <audio id="musica-natal" loop>
+    <source src="audio/mixkit-tinsel-and-mistletoe-93.mp3" type="audio/wav">
+   </audio>
+
+    <main class="container-contato">
+        <h1>Fale Conosco</h1>
+
+        <div class="layout-contato">
+
+            <form id="form-contato" class="form-estilizado" novalidate>
+                <div class="grupo-input">
+                    <label for="nome">Nome Completo:*</label>
+                    <input type="text" id="nome" name="nome"  placeholder="Seu Nome Completo" required>
+                        <span class="msg-erro" id="erro-nome"></span>
+                    
+
+          
+        </div>
+        <div class="grupo-input">
+            <label for="email">E-mail:*</label>
+          <input type="email" id="email" placeholder="Seu e-mail" required>
+<span id="erro-email" class="erro-form hidden">Por favor, digite um e-mail válido.</span>
+        </div>
+
+        <div class="grupo-input">
+            <label for="mensagem">Mensagem:*</label>
+            <textarea  id="mensagem" name="mensagem" rows="5" required></textarea>
+            <span class="msg-erro" id="erro-mensagem"></span>
+
+        </div>
+        <button type="submit" class="btn-link"> Enviar Mensagem</button>
+        <p id="msg-sucesso" class="msg-sucesso hidden">Mensagem enviada com sucesso! 🎄 </p>
+         </form>
+         
+         <div class="info-loja">
+            <h2>Informações de Contato</h2>
+            <p>📍 <strong>Endereço:</strong>Av.Natalina Noel, 2512 - Natal/AURA</p>
+            <p>📞 <strong>Telefone:</strong>(19)99999-9999</p>
+            <p>✉️<strong>E-mail:</strong>contato@auradenatal.com.br</p>
+            <p>🌐<strong>Redes Sociais:</strong>@auradenatal</p>
+            
+            
+         </div>
+    
+    </main>
+
+<footer class="footer-principal">
+        <p>&copy;2026 Confeitaria Aura de Natal- Colégio UNASP.</p>
+    </footer>
+
+        <script src="js/produtos.js" defer></script>
+            <script src="js/script.js" defer></script>  
+
+   </body>
+</html>
